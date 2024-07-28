@@ -1,0 +1,442 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+main {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+    position: relative;
+    width: 1280px;
+    height: 3794px;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+}
+.start-screen{
+    height: 908px;
+    width: 1280px;
+    background: radial-gradient(rgba(91, 72, 58, 1), rgba(38, 36, 37, 1));
+}
+header {
+    width: 1200px;
+    height: 60px;
+    background: whitesmoke;
+    /* margin: 30px 40px 0px 40px; */
+    position: relative;
+    top: 30px ;
+    left: 40px;
+   
+}
+.content-layout {
+    position: absolute;
+    width: 1200px;
+    height: 728px;
+    top: 180px;
+    left: 40px;
+    gap: 0px;
+    opacity: 0px;    
+}
+.content{
+    position: relative;
+    width: 460px;
+    height: 322px;
+    top: 163px;
+    opacity: 0px;
+
+}
+.start-screen-puppy {
+    position: absolute;
+    top: 0px;
+    left: 502px;
+    bottom: 322px;
+    width: 698px;
+    height: 728px;
+    padding: 0px;
+}
+.about {
+    height: 588px;
+    width: 1280px;
+    padding: 0px;
+    background: rgba(255, 255, 255, 1);
+
+}
+.heading{
+    position: absolute;
+    top: px;
+    width: 310px;
+    height: 114px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Georgia;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+    text-align: left;
+}
+.subheading{
+    position: absolute;
+    top: 156px;
+    width: 460px;
+    height: 72px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    
+}
+.button_primary {
+    position: absolute;
+    top:270px;
+    background: rgba(241, 205, 179, 1);
+    width: Hug (207px)px;
+    height: Hug (52px)px;
+    top: 270px;
+    padding: 15px 45px 15px 45px;
+    gap: 10px;
+    border-radius: 100px 100px 100px 100px;
+    opacity: 0px;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;   
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-align: center;
+}
+.about-content {
+    position: relative;
+    width: 1200px;
+    height: 408px;
+    left: 40px;
+    top: 80px;
+    bottom: 100px;
+}
+.about-pets {
+    position: absolute;
+    width: 300px;
+    height: 408px;
+    left: 175px;
+    padding: Opx;
+
+}
+.about-heading{
+    position: absolute;
+    top: 14px;
+    left: 595px;
+    bottom: 304px;
+    width: 370px;
+    height: 90px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: rgba(84, 84, 84, 1);
+    
+    
+}
+
+.about-subheading1 {
+    position: absolute;
+    width: 430px;
+height: 96px;
+top: 129px;
+left: 595px;
+bottom: 183px;
+gap: 0px;
+opacity: 0px;
+font-family: Arial;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+
+}
+.about-subheading2 {
+    position: absolute;
+    width: 430px;
+    height: 144px;
+    top: 250px;
+    left: 595px;
+    bottom: 14px;
+    gap: 0px;
+    opacity: 0px;
+font-family: Arial;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: rgba(76, 76, 76, 1);
+}
+.pets {
+    width: 1280px;
+    height: 877px;
+
+}
+.pets-content {
+    position: relative;
+
+    width: 1200px;
+    height: 697px;
+    top: 80px;
+    left: 40px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.pets-heading {
+    position: absolute;
+    max-width: 400px;
+    max-height: 90px;
+    left: 400px;
+    gap: 0px;
+    opacity: 0px;
+
+font-family: Georgia;
+font-size: 35px;
+font-weight: 400;
+line-height: 45.5px;
+letter-spacing: 0.06em;
+text-align: center;
+color: rgba(84, 84, 84, 1);
+
+}
+
+.slider {
+    position: absolute;
+    width: 1200px;
+    height: 435px;
+    top: 150px;
+    gap: 0px;
+    opacity: 0px;
+}
+.button_arrow-left{
+position: absolute;
+width: Hug (52px)px;
+height: Hug (52px)px;
+top: 192px;
+padding: 19px 23px 19px 23px;
+gap: 0px;
+border-radius: 100px 100px 100px 100px;
+border: 2px 2px 2px 2px;
+opacity: 0px;
+border: 2px solid rgba(241, 205, 179, 1);
+motion-rotation: 180 deg;
+
+}
+.card1 {
+    position: absolute;
+    width: 270px;
+    height: 435px;
+    left: 105px;    
+    padding: 0px 0px 30px 0px;
+    gap: 30px;
+    border-radius: 9px 0px 0px 0px;
+    opacity: 0px;
+
+}
+.pets-katrine {
+    width: 270px;
+    height: 270px;
+    gap: 0px;
+    border-radius: 9px 9px 0px 0px;
+    opacity: 0px;
+
+}
+.card1-text{
+    position: absolute;
+    width: 74px;
+    height: 23px;
+    top: 300px;
+    left: 98px;
+    gap: 0px;
+    opacity: 0px;
+    
+    font-family: Georgia;
+font-size: 20px;
+font-weight: 400;
+line-height: 22.72px;
+letter-spacing: 0.06em;
+text-align: center;
+color: rgba(84, 84, 84, 1);
+
+}
+.button_secondary{
+    position: absolute;
+    width: Hug (187px)px;
+height: Hug (52px)px;
+top: 353px;
+left: 41.5px;
+gap: 0px;
+opacity: 0px;
+width: Hug (187px)px;
+height: Hug (52px)px;
+padding: 15px 45px 15px 45px;
+gap: 10px;
+border-radius: 100px 100px 100px 100px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+border: 2px solid rgba(241, 205, 179, 1);
+font-family: Georgia;
+font-size: 17px;
+font-weight: 400;
+line-height: 22.1px;
+letter-spacing: 0.06em;
+text-align: left;
+color: rgba(41, 41, 41, 1);
+}
+
+.pets-Jennifer {
+    width: 270px;
+    height: 270px;
+    gap: 0px;
+    border-radius: 9px 9px 0px 0px;
+    opacity: 0px;
+
+}
+.card2 {
+    position: absolute;
+    width: 270px;
+    height: 435px;
+    left: 465px;
+    padding: 0px 0px 30px 0px;
+    gap: 30px;
+    border-radius: 9px 0px 0px 0px;
+    opacity: 0px;
+}
+.card2-text{
+    position: absolute;
+    width: 83px;
+    height: 23px;
+    top: 300px;
+    left: 94px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Georgia;
+font-size: 20px;
+font-weight: 400;
+line-height: 22.72px;
+letter-spacing: 0.06em;
+text-align: center;
+color: rgba(84, 84, 84, 1);
+
+}
+.card3 {
+    position: absolute;
+    width: 270px;
+    height: 435px;
+    left: 825px;
+    padding: 0px 0px 30px 0px;
+    gap: 30px;
+    border-radius: 9px 0px 0px 0px;
+    opacity: 0px;
+    
+
+}
+.card3-text{
+    position: absolute;
+    width: 83px;
+    height: 23px;
+    top: 300px;
+    left: 94px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Georgia;
+font-size: 20px;
+font-weight: 400;
+line-height: 22.72px;
+letter-spacing: 0.06em;
+text-align: center;
+color: rgba(84, 84, 84, 1);
+}
+.button_arrow-right{
+    position: absolute;
+    width: Hug (52px)px;
+    height: Hug (52px)px;
+    top: 192px;
+    left: 1148px;
+    padding: 19px 23px 19px 23px;
+    gap: 0px;
+    border-radius: 100px 100px 100px 100px;
+    border: 2px 2px 2px 2px;
+    opacity: 0px;
+    border: 2px solid rgba(241, 205, 179, 1);
+    motion-rotation: 180 deg;
+    
+    }
